@@ -20,8 +20,8 @@ hr{
 
 .list a{
     color: black;
-    padding: 8px 12px;
-    font-size: 0.6em;
+    padding: 8px;
+    font-size: 0.5em;
 }
 
 .list a:hover{
@@ -41,7 +41,7 @@ hr{
 
 .btn1 a:hover{
     box-shadow:rgba(0,0,0,0.1) 1px 1px 1px;
-    transform: scale(1:1);
+    transform: scale(1,1);
 }
 
 #cover{
@@ -93,7 +93,7 @@ hr{
 .btn2 a:hover{
     color: aqua;
     box-shadow:rgba(0,0,0,0.3) 1px 2px 2px;
-    transform: scale(1:1);
+    transform: scale(1,1);
 }
 
 .intro-img{
@@ -168,7 +168,7 @@ hr{
 .page-grid-btn a:hover{
     color: aqua;
     box-shadow:rgba(0,0,0,0.3) 1px 2px 2px;
-    transform: scale(1:1);
+    transform: scale(1,1);
 }
 
 .page-grid-btn{
@@ -176,8 +176,8 @@ hr{
 }
 
 footer{
-    width: 100%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .insure{
@@ -200,14 +200,9 @@ footer{
     gap: 1em;
 }
 
-.footer-list-container{
-    max-width: 100%;
-    margin: auto;
-}
-
 #footer-list{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     list-style: none;
