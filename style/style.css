@@ -24,6 +24,10 @@ hr{
     font-size: 0.6em;
 }
 
+.list a:hover{
+    color: brown;
+}
+
 .push{
     margin-right: auto;
     margin-left: 1em;
@@ -35,10 +39,14 @@ hr{
     margin-right: 1em;
 }
 
+.btn1 a:hover{
+    box-shadow:rgba(0,0,0,0.1) 1px 1px 1px;
+    transform: scale(1:1);
+}
+
 #cover{
     display: grid;
     grid-template-columns: 1fr;
-    
 }
 
 .cover-container{
@@ -49,6 +57,7 @@ hr{
     font-family: sans-serif;
     text-transform: capitalize;
     line-height: 1.5;
+    height: 180vh;
 }
 
 .cover-texts{
@@ -79,6 +88,12 @@ hr{
 
 .cover-texts .btn2{
     margin-top: 3em;
+}
+
+.btn2 a:hover{
+    color: aqua;
+    box-shadow:rgba(0,0,0,0.3) 1px 2px 2px;
+    transform: scale(1:1);
 }
 
 .intro-img{
@@ -150,8 +165,19 @@ hr{
     padding: 10px 30px;
 }
 
+.page-grid-btn a:hover{
+    color: aqua;
+    box-shadow:rgba(0,0,0,0.3) 1px 2px 2px;
+    transform: scale(1:1);
+}
+
 .page-grid-btn{
     margin-bottom: 2rem;
+}
+
+footer{
+    width: 100%;
+    margin: auto;
 }
 
 .insure{
@@ -174,7 +200,16 @@ hr{
     gap: 1em;
 }
 
+.footer-list-container{
+    max-width: 100%;
+    margin: auto;
+}
+
 #footer-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     font-family: sans-serif;
     text-align: center;
@@ -189,6 +224,10 @@ hr{
 #footer-list h4{
     font-size: 1.5em;
     color: hsl(273, 4%, 51%);
+}
+
+#footer-list a:hover{
+    color: red;
 }
 
 @media only screen and (min-width: 600px) {
