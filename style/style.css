@@ -178,9 +178,13 @@ hr{
 footer{
     display: flex;
     flex-direction: column;
+    background: hsl(0, 0%, 98%);
+    margin: 0;
+    padding: 0;
 }
 
 .insure{
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
@@ -188,7 +192,6 @@ footer{
     align-items: center;
     background: url(../assets/bg-pattern-footer-mobile.svg) no-repeat;
     background-size: cover;
-    margin-bottom: 2rem;
     padding-top: 4rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -201,24 +204,23 @@ footer{
 }
 
 #footer-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    text-align: center;
     list-style: none;
     font-family: sans-serif;
-    text-align: center;
     text-transform: uppercase;
     line-height: 2.5;
-    font-size: 0.8em;
     color: hsl(270, 9%, 17%);
     font-weight: 400;
-    background: hsl(0, 0%, 98%);
 }
 
 #footer-list h4{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: hsl(273, 4%, 51%);
+}
+
+#footer-list a{
+    font-size: 0.8rem;
 }
 
 #footer-list a:hover{
