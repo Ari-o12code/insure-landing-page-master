@@ -176,11 +176,10 @@ hr{
 }
 
 footer{
-    display: flex;
-    flex-direction: column;
     background: hsl(0, 0%, 98%);
     margin: 0;
     padding: 0;
+    margin-top: 2rem;
 }
 
 .insure{
@@ -253,11 +252,10 @@ footer{
     .cover-container{
         display: flex;
         position: relative;
-        height: 70vh;
+        height: 72vh;
     }
     
     .cover-texts{
-        padding: 4rem 8rem;
         text-align: left;
     }
 
@@ -358,6 +356,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: 1fr;
+        gap: 3em;
         text-align: left;
         padding-bottom: 2em;
     }
